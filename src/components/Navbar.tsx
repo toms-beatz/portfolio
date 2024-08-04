@@ -1,30 +1,67 @@
-"use client"
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import Link from 'next/link'
+import MaxWidthWrapper from './MaxWidthWrapper'
+import { buttonVariants } from './ui/button'
+import MobileNav from './MobileNav'
+import { ArrowRight, CodeXml, Contact, User } from 'lucide-react'
+import { cn } from "@/lib/utils";
+
 const Navbar = () => {
 
+
     return (
-        <nav className="sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 lg:bg-pWhite/80 bg-pWhite backdrop-blur-lg transition-all dark:bg-banger-blue dark:lg:bg-banger-blue/70 dark:border-banger-blue">
+        <nav className='sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all'>
             <MaxWidthWrapper>
-                <div className="flex h-14 items-center justify- border-b border-zinc-200 dark:border-banger-blue">
-                    <div className="flex items-center flex-row- justify- w-full">
-                        {/* <Link
-                            href="/">
-                            <Image
-                                src='/logolong.svg'
-                                alt='Logo Banger'
-                                width={125}
-                                height={30}
-                                quality={100}
-                                className="cursor-pointer mb-1"
-                            />
-                        </Link> */}
-                        <p className="font-title text-2xl font-bold text-green-3">Thomas Mazeau.</p>
+                <div className='flex h-14 items-center justify-between border-b'>
+                    <Link
+                        href='/'
+                        className='flex z-40 font-semibold'>
+                        <span className="font-title text-xl font-bold text-green-3">Thomas Mazeau.</span>
+                    </Link>
+
+                    <MobileNav />
+
+                    <div className='hidden items-center space-x-4 sm:flex justify-center *:text-purple-1 hover:*:text-purple-2'>
+                        <>
+                            <Link
+                                href='/'
+                                className={cn(buttonVariants({
+                                    variant: 'ghost',
+                                    size: 'sm',
+                                }), 'font-body font-bold text-md')
+                                }>
+                                <User className='h-5 w-5 mr-2' />
+                                profil.
+                            </Link>
+
+                            <Link
+                                href='/projects'
+                                className={cn(buttonVariants({
+                                    variant: 'ghost',
+                                    size: 'sm',
+                                }), 'font-body font-bold text-md')
+                                }>
+                                <CodeXml className='h-5 w-5 mr-2' />
+                                projets.
+                            </Link>
+
+                            <Link
+                                href='/contact'
+                                className={cn(buttonVariants({
+                                    variant: 'ghost',
+                                    size: 'sm',
+                                }), 'font-body font-bold text-md')
+                                }>
+                                <Contact className='h-5 w-5 mr-2' />
+                                contact.
+                            </Link>
+
+                        </>
+
                     </div>
-                    
                 </div>
             </MaxWidthWrapper>
         </nav>
-    );
+    )
 }
 
-export default Navbar;
+export default Navbar

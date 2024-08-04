@@ -14,10 +14,11 @@ const config = {
       'green-1': '#A3B18A',
       'green-2': '#588157',
       'green-3': '#3A5A40',
-      'purple': '#9d79bc',
+      'purple-1': '#8367c7',
+      'purple-2': '#5603ad',
       'grey': '#DAD7CD',
-      'pWhite': '#ffffff',
-      'pBlack': '#000000',
+      'white': '#ffffff',
+      'black': '#000000',
       'transparent': 'transparent'
     },
     container: {
