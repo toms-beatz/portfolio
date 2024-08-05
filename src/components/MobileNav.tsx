@@ -31,7 +31,7 @@ const MobileNav = () => {
 
             {isOpen ? (
                 <div className='fixed animate-in slide-in-from-top-5 fade-in-20 inset-0 z-0 w-full'>
-                    <ul className='absolute bg-white border-b border-zinc-200 shadow-xl grid w-full gap-3 px-10 pt-20 pb-8'>
+                    <ul className='absolute bg-white border-b border-zinc-200 shadow-xl grid w-full gap-3 px-10 pt-20 pb-8 dark:bg-[#212427]'>
                         <>
                             <li className='flex flex-row space-x-4 text-purple-1 hover:text-purple-2'>
                                 <User className='h-6 w-6' />

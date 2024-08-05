@@ -33,7 +33,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/lgy5czk.css"></link>
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </head>
-      <body className={cn('min-h-screen font-sans antialiased grainy bg-grey')}>
+      <body className={cn('min-h-screen font-sans antialiased bg-white dark:bg-[#212427]')}>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <Navbar />
         {children}
