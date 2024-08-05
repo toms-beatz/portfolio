@@ -40,8 +40,8 @@ const MobileNav = () => {
                                         closeOnCurrent('/profile')
                                     }
                                     className='flex items-center w-full font-body font-bold text-md '
-                                    href='/profile'>
-                                    profil.
+                                    href='/#profile'>
+                                    profil_
                                 </Link>
                             </li>
                             <li className='my-3 h-px w-full bg-grey' />
@@ -49,8 +49,8 @@ const MobileNav = () => {
                                 <CodeXml className='h-6 w-6' />
                                 <Link
                                     className='flex items-center w-full font-semibold'
-                                    href='/project'>
-                                    projets.
+                                    href='/#project'>
+                                    projets_
                                 </Link>
                             </li>
                             <li className='my-3 h-px w-full bg-grey' />
@@ -58,8 +58,8 @@ const MobileNav = () => {
                                 <Contact className='h-6 w-6' />
                                 <Link
                                     className='flex items-center w-full font-semibold'
-                                    href='/contact'>
-                                    contact.
+                                    href='/#contact'>
+                                    contact_
                                 </Link>
                             </li>
                         </>

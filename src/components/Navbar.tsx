@@ -36,8 +36,8 @@ const Navbar = () => {
                     <Link
                         href='/'
                         className='flex z-40 font-semibold'>
-                        <span className="font-title text-xl font-bold text-green-3 hidden sm:flex dark:text-white">Thomas Mazeau<span className='text-green-1'>.</span></span>
-                        <span className="font-title text-xl font-bold text-green-3 sm:hidden dark:text-white">TM<span className='text-green-1'>.</span></span>
+                        <span className="font-title text-xl font-bold text-green-3 hidden sm:flex dark:text-white">Thomas Mazeau<span className='text-green-1'>_</span></span>
+                        <span className="font-title text-xl font-bold text-green-3 sm:hidden dark:text-white">TM<span className='text-green-1'>_</span></span>
                     </Link>
                     <div className="flex justify-end items-center">
                     <div className="ml-auto mr-4"><MobileNav /></div>
@@ -46,36 +46,36 @@ const Navbar = () => {
                     <div className='hidden items-center space-x-4 sm:flex justify-center sm:*:text-purple-1 hover:*:text-purple-2 dark:hover:*:text-white'>
                         <>
                             <Link
-                                href='/profile'
+                                href='/#profile'
                                 className={cn(buttonVariants({
                                     variant: 'ghost',
                                     size: 'sm',
                                 }), 'font-body font-bold text-md')
                                 }>
                                 <User className='h-5 w-5 mr-2' />
-                                profil.
+                                profil_
                             </Link>
 
                             <Link
-                                href='/projects'
+                                href='/#projects'
                                 className={cn(buttonVariants({
                                     variant: 'ghost',
                                     size: 'sm',
                                 }), 'font-body font-bold text-md')
                                 }>
                                 <CodeXml className='h-5 w-5 mr-2' />
-                                projets.
+                                projets_
                             </Link>
 
                             <Link
-                                href='/contact'
+                                href='/#contact'
                                 className={cn(buttonVariants({
                                     variant: 'ghost',
                                     size: 'sm',
                                 }), 'font-body font-bold text-md')
                                 }>
                                 <Contact className='h-5 w-5 mr-2' />
-                                contact.
+                                contact_
                             </Link>
 
                         </>
