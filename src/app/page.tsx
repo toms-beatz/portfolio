@@ -43,27 +43,39 @@ const projects = [
   },
   {
     id: 4,
-    title: '',
-    description: 'Description du projet 4',
-    image: '/profile-ig.jpg',
-    public_link: 'https://www.google.com',
-    github_link: 'https://www.github.com'
+    title: 'Kouiz Desktop',
+    description: 'Application desktop pour Kouiz. Permet aux admins de gérer les utilisateurs et les Kouizzes depuis leur ordinateur.',
+    image: '/kouiz-desktop.png',
+    // public_link: 'https://www.google.com',
+    github_link: 'https://www.github.com/toms-beatz/kouiz-desktop',
+    technologies: ['React', 'NextJS', 'Electron', 'TailwindCSS']
   },
   {
     id: 5,
-    title: 'Projet 5',
-    description: 'Description du projet 5',
-    image: '/profile-mg.jpg',
-    public_link: 'https://www.google.com',
-    github_link: 'https://www.github.com'
+    title: 'Portfolio Thomasgram',
+    description: 'Mon ancien portfolio, qui est un clone d\'Instagram.',
+    image: '/thomasgram.png',
+    // public_link: 'https://archive.thomas-mazeau.com',
+    github_link: 'https://www.github.com/toms-beatz/portfolio-thomasgram',
+    technologies: ['PHP', 'JavaScript', 'HTML', 'CSS']
   },
   {
     id: 6,
-    title: 'Projet 6',
-    description: 'Description du projet 6',
-    image: '/profile-ig.jpg',
-    public_link: 'https://www.google.com',
-    github_link: 'https://www.github.com'
+    title: 'Caramblagues',
+    description: 'Première utilisation d\'une API externe. Application de blagues en ligne.',
+    image: '/caramblagues.png',
+    // public_link: 'https://www.google.com',
+    github_link: 'https://www.github.com/toms-beatz/caramblagues',
+    technologies: ['PHP', 'JavaScript', 'HTML', 'CSS']
+  },
+  {
+    id: 7,
+    title: 'English Game',
+    description: 'Projet d\'école en anglais. LE but était de créer un jeu de société en anglais. Cette application sert à choisir un Game Master au hasard, ainsi qu\'une marque et un brief.',
+    image: '/englishgame.png',
+    // public_link: 'https://www.google.com',
+    github_link: 'https://www.github.com/toms-beatz/english-game-web',
+    technologies: ['PHP', 'JavaScript', 'HTML', 'CSS']
   },
 ]
 
@@ -113,19 +125,19 @@ export default function Home() {
           <CarouselContent>
             {projects.map(project => (
               <CarouselItem key={project.id}>
-                <Card className="border">
+                <Card className="border dark:bg-white dark:rounded-md dark:border">
                   <Image
                     src={project.image}
                     alt={project.title}
                     width={2879}
                     height={1570}
                     quality={100}
-                    className='rounded-lg w-full h-full hidden lg:block'
+                    className='rounded-lg w-full h-full object-cover'
                   />
-                  <CardContent>
+                  <CardContent className="">
                     <div className="flex flex-row items-center gap-8 justify-between pt-8">
-                      <h3 className="font-title text-3xl font-bold text-green-3 dark:text-white">{project.title}</h3>
-                      <div className="flex flex-row gap-3">
+                      <h3 className="font-title text-3xl font-bold text-green-3">{project.title}</h3>
+                      <div className="flex flex-row gap-3 flex-wrap">
                         {project.technologies?.map((tech, index) => (
                           <>
                             <Image
@@ -145,7 +157,6 @@ export default function Home() {
                     <p className="font-body text-lg font-normal text-green-2 dark:text-green-1 py-8">{project.description}</p>
                     <div className="flex flex-row gap-4">
                       {project.public_link && (
-
                         <Button className="bg-purple-2 hover:bg-purple-1 dark:text-white">
                           <a href={project.public_link} target="_blank" className="flex flex-row items-center space-x-4">
                             <Globe className="" />
