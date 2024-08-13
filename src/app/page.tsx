@@ -25,12 +25,12 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Banger',
-    description: 'Site vitrine de Banger, une application simplifiant la planification de soirées. Projet d\'école',
-    image: '/banger.png',
-    public_link: 'https://www.bangerevent.live',
-    github_link: 'https://www.github.com/toms-beatz/banger',
-    technologies: ['React', 'NextJs', 'TailwindCSS']
+    title: 'Kouiz Desktop',
+    description: 'Application desktop pour Kouiz. Permet aux admins de gérer les utilisateurs et les Kouizzes depuis leur ordinateur.',
+    image: '/kouiz-desktop.png',
+    // public_link: 'https://www.google.com',
+    github_link: 'https://www.github.com/toms-beatz/kouiz-desktop',
+    technologies: ['React', 'NextJS', 'Electron', 'TailwindCSS']
   },
   {
     id: 3,
@@ -43,38 +43,38 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Kouiz Desktop',
-    description: 'Application desktop pour Kouiz. Permet aux admins de gérer les utilisateurs et les Kouizzes depuis leur ordinateur.',
-    image: '/kouiz-desktop.png',
-    // public_link: 'https://www.google.com',
-    github_link: 'https://www.github.com/toms-beatz/kouiz-desktop',
-    technologies: ['React', 'NextJS', 'Electron', 'TailwindCSS']
+    title: 'Banger',
+    description: 'Site vitrine de Banger, une application simplifiant la planification de soirées. Projet d\'école',
+    image: '/banger.png',
+    public_link: 'https://www.bangerevent.live',
+    github_link: 'https://www.github.com/toms-beatz/banger',
+    technologies: ['React', 'NextJs', 'TailwindCSS']
   },
   {
     id: 5,
     title: 'Portfolio Thomasgram',
     description: 'Mon ancien portfolio, qui est un clone d\'Instagram.',
     image: '/thomasgram.png',
-    // public_link: 'https://archive.thomas-mazeau.com',
+    public_link: 'https://archive.thomas-mazeau.com',
     github_link: 'https://www.github.com/toms-beatz/portfolio-thomasgram',
     technologies: ['PHP', 'JavaScript', 'HTML', 'CSS']
   },
   {
     id: 6,
-    title: 'Caramblagues',
-    description: 'Première utilisation d\'une API externe. Application de blagues en ligne.',
-    image: '/caramblagues.png',
-    // public_link: 'https://www.google.com',
-    github_link: 'https://www.github.com/toms-beatz/caramblagues',
-    technologies: ['PHP', 'JavaScript', 'HTML', 'CSS']
-  },
-  {
-    id: 7,
     title: 'English Game',
     description: 'Projet d\'école en anglais. LE but était de créer un jeu de société en anglais. Cette application sert à choisir un Game Master au hasard, ainsi qu\'une marque et un brief.',
     image: '/englishgame.png',
     // public_link: 'https://www.google.com',
     github_link: 'https://www.github.com/toms-beatz/english-game-web',
+    technologies: ['PHP', 'JavaScript', 'HTML', 'CSS']
+  },
+  {
+    id: 7,
+    title: 'Caramblagues',
+    description: 'Première utilisation d\'une API externe. Application de blagues en ligne.',
+    image: '/caramblagues.png',
+    // public_link: 'https://www.google.com',
+    github_link: 'https://www.github.com/toms-beatz/caramblagues',
     technologies: ['PHP', 'JavaScript', 'HTML', 'CSS']
   },
 ]
