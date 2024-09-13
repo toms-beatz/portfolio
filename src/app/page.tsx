@@ -16,6 +16,15 @@ import { Card, CardContent } from "@/components/ui/card"
 const projects = [
   {
     id: 1,
+    title: 'Kouiz mobile',
+    description: 'Application mobile pour Kouiz. Permet aux utilisateurs de répondre aux Kouizzes depuis leur téléphone. Fonctionne sur Android et iOS.',
+    image: '/kouiz-mobile.png',
+    // public_link: 'https://www.google.com',
+    github_link: 'https://www.github.com/toms-beatz/kouiz-mobile',
+    technologies: ['React', 'Expo', 'TailwindCSS']
+  },
+  {
+    id: 2,
     title: 'Kouiz web',
     description: 'Interface web de Kouiz, application de quiz en ligne.',
     image: '/kouiz.png',
@@ -24,7 +33,7 @@ const projects = [
     technologies: ['React', 'NextJs', 'TailwindCSS', 'Laravel', 'MariaDB', 'Docker', 'Traefik']
   },
   {
-    id: 2,
+    id: 3,
     title: 'Kouiz Desktop',
     description: 'Application desktop pour Kouiz. Permet aux admins de gérer les utilisateurs et les Kouizzes depuis leur ordinateur.',
     image: '/kouiz-desktop.png',
@@ -32,15 +41,7 @@ const projects = [
     github_link: 'https://www.github.com/toms-beatz/kouiz-desktop',
     technologies: ['React', 'NextJS', 'Electron', 'TailwindCSS']
   },
-  {
-    id: 3,
-    title: 'Kouiz mobile',
-    description: 'Application mobile pour Kouiz. Permet aux utilisateurs de répondre aux Kouizzes depuis leur téléphone. Fonctionne sur Android et iOS.',
-    image: '/kouiz-mobile.png',
-    // public_link: 'https://www.google.com',
-    github_link: 'https://www.github.com/toms-beatz/kouiz-mobile',
-    technologies: ['React', 'Expo', 'TailwindCSS']
-  },
+
   {
     id: 4,
     title: 'Banger',
