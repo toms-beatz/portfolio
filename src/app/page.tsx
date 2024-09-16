@@ -28,6 +28,7 @@ const projects = [
     title: 'Kouiz web',
     description: 'Interface web de Kouiz, application de quiz en ligne.',
     image: '/kouiz.png',
+    public_link: 'https://kouiz.vercel.app/',
     // public_link: 'https://www.kouiz.fr',
     github_link: 'https://www.github.com/toms-beatz/kouiz',
     technologies: ['React', 'NextJs', 'TailwindCSS', 'Laravel', 'MariaDB', 'Docker', 'Traefik']
