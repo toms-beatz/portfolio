@@ -85,6 +85,28 @@ export default function Home() {
 
   return (
     <>
+      <div className="bg-purple-1 w-[40rem] h-[40rem] flex flex-col">
+        <div className="flex">
+          <div className="m-2 bg-green-3 w-20 h-20 grow flex justify-center items-center">
+            <span className="">1</span>
+          </div>
+          <div className="m-2 bg-green-3 w-20 h-20 grow-[2] flex justify-center items-center">
+            <span >2</span>
+          </div>
+          <div className="m-2 bg-green-3 w-20 h-20 grow flex justify-center items-center">
+            <span >3</span>
+          </div>
+        </div>
+        <div className="flex justify-evenly">
+          <div className="m-2 bg-green-3 w-20 h-20 grow flex justify-center items-center">
+            <span >4</span>
+          </div>
+          <div className="m-2 bg-green-3 w-20 h-20 grow flex justify-center items-center">
+            <span className="">5</span>
+          </div>
+        </div>
+
+      </div>
       <MaxWidthWrapper className="flex lg:flex-row flex-col justify-center lg:w-full lg:space-x-40 h-screen items-center lg:space-y-0 space-y-8">
         <Image
           src="/profile-img.jpg"
@@ -209,7 +231,6 @@ export default function Home() {
 
         </div>
       </MaxWidthWrapper>
-
     </>
   );
 }
