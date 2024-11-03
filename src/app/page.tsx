@@ -1,5 +1,5 @@
 "use client"
-
+import { Analytics } from "@vercel/analytics/react"
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, ArrowRight, Eye, FileText, Github, Globe, Hammer, Link, Linkedin, Mail } from "lucide-react";
